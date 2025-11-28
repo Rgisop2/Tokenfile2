@@ -45,18 +45,18 @@ SHORTLINK_URL_1 = os.environ.get("SHORTLINK_URL_1", SHORTLINK_URL)
 SHORTLINK_API_1 = os.environ.get("SHORTLINK_API_1", SHORTLINK_API)
 
 # Second shortener settings (used for second verification, optional for dual verification)
-SHORTLINK_URL_2 = os.environ.get("SHORTLINK_URL_2", "")
-SHORTLINK_API_2 = os.environ.get("SHORTLINK_API_2", "")
+SHORTLINK_URL_2 = os.environ.get("SHORTLINK_URL_2", "arolinks.com")
+SHORTLINK_API_2 = os.environ.get("SHORTLINK_API_2", "2b3dd0b54ab06c6c8e6cf617f20d5fff15ee1b71")
 
 # Verification expiry times (in seconds)
 VERIFY_EXPIRE = int(os.environ.get('VERIFY_EXPIRE', 86400))  # 24 hours by default
-VERIFY_EXPIRE_1 = int(os.environ.get('VERIFY_EXPIRE_1', VERIFY_EXPIRE))
-VERIFY_EXPIRE_2 = int(os.environ.get('VERIFY_EXPIRE_2', VERIFY_EXPIRE))
+VERIFY_EXPIRE_1 = int(os.environ.get('VERIFY_EXPIRE_1', 86400))
+VERIFY_EXPIRE_2 = int(os.environ.get('VERIFY_EXPIRE_2', 86400))
 
 # Gap time between first and second verification (in seconds, default 30 mins)
 VERIFY_GAP_TIME = int(os.environ.get('VERIFY_GAP_TIME', 1800))
 
-VERIFY_IMAGE = os.environ.get("VERIFY_IMAGE", "https://telegra.ph/file/1234567890abcdef.jpg") # Placeholder - User must set a real image URL
+VERIFY_IMAGE = os.environ.get("VERIFY_IMAGE", "https://i.ibb.co/DH6ScbX2/7700112188-0b947874.jpg") # Placeholder - User must set a real image URL
 
 IS_VERIFY = os.environ.get("IS_VERIFY", "True")
 TUT_VID = os.environ.get("TUT_VID", "") # Removed old YouTube link as requested
